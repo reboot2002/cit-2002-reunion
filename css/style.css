@@ -137,3 +137,13 @@ ul.plain span { color: var(--muted); font-size: .95rem; }
 .cta-band { background: var(--navy); color: #fff; text-align: center; padding: 48px 0; }
 .cta-band h2 { color: #fff; }
 .cta-band p { color: var(--silver); }
+
+/* Home hero: title left, "Coming Up" right */
+.split-hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: center; }
+.coming-up { background: rgba(255,255,255,.1); border: 1px solid rgba(192,198,208,.4); border-radius: var(--radius); padding: 22px; }
+.coming-up h2 { color: #fff; margin-top: 0; font-size: 1.5rem; }
+.coming-up .event { padding: 12px 0; border-top: 1px solid rgba(192,198,208,.3); }
+.coming-up .label { text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; color: var(--silver); font-weight: 700; }
+.coming-up b, .coming-up span { display: block; }
+.coming-up span { color: var(--silver-lt); }
+@media (max-width: 800px) { .split-hero { grid-template-columns: 1fr; } }
